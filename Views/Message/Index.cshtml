@@ -1,0 +1,35 @@
+@model YourProjectNamespace.Models.Message
+<h2>Send a Message</h2>
+<form asp-action="Index" method="post">
+    <div>
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" />
+    </div>
+    <div>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" />
+    </div>
+    <div>
+        <label for="Content">Message:</label>
+        <input type="text" id="Content" name="Content" />
+    </div>
+    <div>
+        <label for="Content">Endfereco:</label>
+        <input type="text" id="Endereco" name="Endereco" />
+    </div>
+    <div>
+        <label for="Content">Cpf:</label>
+        <input type="text" id="Cpf" name="Cpf" />
+    </div>
+    <button type="submit">Send</button>
+</form>
+@if (ViewBag.Message != null)
+{
+    <h3>Received Information:</h3>
+    <p><strong>Name:</strong> @ViewBag.Name</p>
+    <p><strong>Email:</strong> @ViewBag.Email</p>
+    <p><strong>Message:</strong> @ViewBag.Message</p>
+        <p><strong>Message:</strong> @ViewBag.Message</p>
+    <p><strong>Message:</strong> @ViewBag.Message</p>
+
+}
